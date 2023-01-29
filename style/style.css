@@ -1,3 +1,101 @@
+*{
+    font-family: cursive;
+}
+
+nav{
+    float: right;  
+    margin-right: 40px;
+    margin-top: -15px;
+    }
+    
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    border: solid black;
+    background-color: mediumblue;
+    box-shadow: 3px 3px grey;
+    }
+
+.aSeleccionado{
+    background-color: green;
+    margin-right: 15px;
+}
+
+nav :hover{
+    color: red;
+    background-color: white;
+}
+
 h1{
-    color: blue;
+    font-size: 3rem;
+    margin: 0%;
+    background-color: white;
+    }
+
+h2{
+    text-align: center;
+    border: solid black 1px;
+    margin-top: 0%;
+    padding: 4px;
+    display: block;
+    width: 1014px;
+}
+
+.container{
+    width: 1024px;
+    margin: auto;
+}
+header{
+    background-image: url(../Imagenes/design1_image1.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+section{
+    display: inline-block;
+}
+
+.imgLogo{
+    width: 200px;
+    height: 200px;
+}
+
+figure{
+    display: inline-block;
+}
+
+.textos{
+    float: right;
+    margin: 20px 170px 0px 0px;
+}
+h4{
+    font-size: 1.1rem;
+    margin: 0px 0px 0px 20px;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin: 20px 0px 0px 0px;
+}
+
+article.contacto{
+    float: right;
+    margin: 20px 170px 0px 0px;
+}
+
+h5{
+    font-size: larger;
+    margin: 20px 170px 0px 0px;
+}
+
+.about{
+    float: right;
+    margin: 20px 80px 0px 0px;
+    width: 650px;
+}
+
+.h4About{
+    font-size: 14px;
 }
