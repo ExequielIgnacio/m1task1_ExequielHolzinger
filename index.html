@@ -7,46 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hockey League</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./Imagenes/LogoMightyducks-01.ico">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1>Mighty Ducks Hockey League</h1>
-            <nav>
-                <a class="aSeleccionado" href="./index.html">Home</a>
-                <a href="./About.html">About</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
+        <header class="header">
+            <div class="titulo">
+                <h1>Mighty Ducks Hockey League</h1>
+            </div>
+            <div class="encabezado">
+                <nav class="nav">
+                    <a class="aSeleccionado" href="./index.html">Home</a>
+                    <a href="./About.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./gameInformation.html">Game information</a>
+                    <a href="./rules&policies.html">Rules & Policies</a>
+                </nav>
+            </div>
         </header>
-        <main>
-            <section>
+        <main class="main">
+            <div class="subtitulo">
                 <h2>Upcoming Events</h2>
-                <figure>
-                    <img class="imgLogo" src="./Imagenes/LogoMightyducks-01.png" alt="Logo" width="350">
-                </figure>
-                <div class="textos">
-                    <article>
-                        <h3>August 4</h3>
-                        <article>
-                            <h4>Fundraiser</h4>
-                        </article>
-                    </article>
-                    <article>
-                        <h3>August 16</h3>
-                        <article>
-                            <h4>Kick-off:Meet the Teams</h4>
-                        </article>
-                    </article>
-                    <article>
-                        <h3>September 1</h3>
-                        <article>
-                            <h4>Firts Game of the Season (Check Game Schedule for details)</h4>
-                        </article>
-                    </article>
-                </div>
-            </section>
+            </div>
+            <div class="home">
+                <dl>
+                    <dt>August 4</dt>
+                    <dd>Fundraiser</dd>
+                    <dt>August 16</dt>
+                    <dd>Kick-off:Meet the Teams</dd>
+                    <dt>September 1</dt>
+                    <dd>Firts Game of the Season (Check Game Schedule for details)</dd>
+                </dl>
+            </div>
         </main>
+        <footer class="footer">
+            <div class="logoFooter">
+                <img src="./Imagenes/LogoMightyducks-01.png" alt="Logo">
+            </div>
+            <div class="aFooter">
+                <a href=""><img src="./Imagenes/LogosRedesSociales/twitter.png" alt="Logo Twitter"></a>
+                <a href=""><img src="./Imagenes/LogosRedesSociales/instagram.png" alt="Logo Instagram"></a>
+                <a href=""><img src="./Imagenes/LogosRedesSociales/facebook.png" alt="Logo Facebook"></a>
+            </div>
+        </footer>
     </div>
 </body>
 

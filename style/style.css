@@ -1,101 +1,227 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: cursive;
 }
 
-nav{
-    float: right;  
-    margin-right: 40px;
-    margin-top: -15px;
-    }
-    
-nav a{
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.titulo {
+    margin-left: 15px;
+    display: flex;
+}
+
+.encabezado {
+    min-height: 35vh;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    background-image: url(../Imagenes/design1_image1.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.nav a {
     color: white;
     text-decoration: none;
     padding: 3px;
     border: solid black;
     background-color: mediumblue;
     box-shadow: 3px 3px grey;
-    }
+    border-radius: 0.5rem;
+    margin: 0px 3px;
+    position: relative;
+    margin-top: -8px;
+}
 
-.aSeleccionado{
+.nav .aSeleccionado {
     background-color: green;
     margin-right: 15px;
 }
 
-nav :hover{
+.nav :hover {
     color: red;
     background-color: white;
 }
 
-h1{
-    font-size: 3rem;
-    margin: 0%;
-    background-color: white;
-    }
+header h1 {
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    padding: 0.5rem;
+    flex-grow: 1;
+}
 
-h2{
+main {
+    min-height: 57vh;
+    background-image: url(../Imagenes/LogoMightyducks-01TRANSPARENTE.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.subtitulo {
     text-align: center;
     border: solid black 1px;
-    margin-top: 0%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    align-items: center;
+    justify-content: center;
     padding: 4px;
-    display: block;
-    width: 1014px;
+    display: flex;
 }
 
-.container{
-    width: 1024px;
-    margin: auto;
-}
-header{
-    background-image: url(../Imagenes/design1_image1.jpg);
-    height: 300px;
-    background-size: cover;
-    background-position-y: center;
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section{
-    display: inline-block;
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    flex-wrap: wrap;
 }
 
-.imgLogo{
+main figure img {
     width: 200px;
     height: 200px;
 }
 
-figure{
-    display: inline-block;
+table {
+    background-color: #FFFBEB;
+    padding: 3px;
 }
 
-.textos{
-    float: right;
-    margin: 20px 170px 0px 0px;
-}
-h4{
-    font-size: 1.1rem;
-    margin: 0px 0px 0px 20px;
+table,
+th,
+td {
+    border: solid black 1px;
+    border-collapse: collapse;
 }
 
-h3{
-    font-size: 1.2rem;
-    margin: 20px 0px 0px 0px;
+th,
+td {
+    padding: 10px;
 }
 
-article.contacto{
-    float: right;
-    margin: 20px 170px 0px 0px;
+.listasRyP {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
 }
 
-h5{
-    font-size: larger;
-    margin: 20px 170px 0px 0px;
+.home {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 35px;
 }
 
-.about{
-    float: right;
-    margin: 20px 80px 0px 0px;
-    width: 650px;
+.about {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 35px;
 }
 
-.h4About{
-    font-size: 14px;
+.gameInformation {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 35px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rulesPolicies {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    padding: 30px;
+}
+
+li,
+dd {
+    list-style-position: inside;
+    margin-left: 3rem;
+}
+
+dl {
+    display: flex;
+    flex-direction: column;
+}
+
+#letras {
+    list-style-type: lower-latin;
+}
+
+#circle {
+    list-style-type: circle;
+}
+
+.rulesPolicies p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacGamesInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    min-height: 8vh;
+    background-color: rgb(223, 222, 132);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+}
+
+footer a img {
+    height: 70px;
+    width: 70px;
+}
+
+.aFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
