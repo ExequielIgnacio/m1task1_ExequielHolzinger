@@ -109,6 +109,10 @@ h5 {
     flex-wrap: wrap;
 }
 
+a {
+    margin-left: 20px;
+}
+
 main figure img {
     width: 200px;
     height: 200px;
@@ -129,6 +133,7 @@ td {
 th,
 td {
     padding: 10px;
+    text-align: center;
 }
 
 .listasRyP {
@@ -142,6 +147,8 @@ td {
     margin: 0 auto;
     display: flex;
     font-size: 35px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .about {
@@ -149,6 +156,18 @@ td {
     margin: 0 auto;
     display: flex;
     font-size: 35px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.contact {
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .gameInformation {
@@ -159,6 +178,16 @@ td {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.gameInformation p {
+    text-indent: 3rem;
+}
+
+iframe {
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 .rulesPolicies {
@@ -166,6 +195,7 @@ td {
     flex-direction: column;
     font-size: 35px;
     padding: 30px;
+    align-items: center;
 }
 
 li,
@@ -177,6 +207,10 @@ dd {
 dl {
     display: flex;
     flex-direction: column;
+}
+
+dt {
+    font-weight: bold;
 }
 
 #letras {
@@ -197,6 +231,38 @@ dl {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+input,
+label {
+    padding: 1rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>p {
+    font-size: 2rem;
+    text-indent: 5rem;
+    padding: 1rem;
+}
+
+.ltitle {
+    font-weight: bold;
 }
 
 footer {
@@ -224,4 +290,5 @@ footer a img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: inherit;
 }
